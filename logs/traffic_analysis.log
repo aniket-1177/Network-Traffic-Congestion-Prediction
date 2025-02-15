@@ -10,3 +10,69 @@
 2025-02-16 01:28:59,384 - traffic_analysis - INFO - Scaling numerical features
 2025-02-16 01:28:59,388 - traffic_analysis - INFO - Saved scaler to models/scaler.pkl
 2025-02-16 01:28:59,388 - traffic_analysis - INFO - Feature engineering completed
+2025-02-16 01:59:21,597 - traffic_analysis - INFO - Generating 1000 samples of synthetic traffic data
+2025-02-16 01:59:21,613 - traffic_analysis - INFO - Saved generated data to data/traffic_data.csv
+2025-02-16 01:59:21,613 - traffic_analysis - INFO - Starting feature engineering process
+2025-02-16 01:59:21,628 - traffic_analysis - INFO - Converting IP addresses to integers
+2025-02-16 01:59:21,628 - traffic_analysis - INFO - Creating aggregate features
+2025-02-16 01:59:21,628 - traffic_analysis - INFO - Calculating packet rate
+2025-02-16 01:59:22,245 - traffic_analysis - INFO - One-hot encoding categorical features
+2025-02-16 01:59:22,245 - traffic_analysis - INFO - Scaling numerical features
+2025-02-16 01:59:22,245 - traffic_analysis - INFO - Saved scaler to models/scaler.pkl
+2025-02-16 01:59:22,245 - traffic_analysis - INFO - Feature engineering completed
+2025-02-16 01:59:22,245 - traffic_analysis - INFO - Starting model training process
+2025-02-16 01:59:22,245 - traffic_analysis - INFO - Splitting data into train and test sets
+2025-02-16 01:59:22,260 - traffic_analysis - INFO - Saved feature dataframe to models/X.pkl
+2025-02-16 01:59:22,260 - traffic_analysis - INFO - Performing time series cross-validation
+2025-02-16 01:59:22,260 - traffic_analysis - INFO - Training on fold
+2025-02-16 01:59:27,647 - traffic_analysis - INFO - New best model found with F1 score: 0.4331
+2025-02-16 01:59:27,647 - traffic_analysis - INFO - Training on fold
+2025-02-16 01:59:32,737 - traffic_analysis - INFO - New best model found with F1 score: 0.5595
+2025-02-16 01:59:32,737 - traffic_analysis - INFO - Training on fold
+2025-02-16 01:59:39,790 - traffic_analysis - INFO - Training on fold
+2025-02-16 01:59:45,116 - traffic_analysis - INFO - Training on fold
+2025-02-16 01:59:51,517 - traffic_analysis - INFO - Evaluating final model on test set
+2025-02-16 01:59:51,534 - traffic_analysis - INFO - Final model metrics:
+2025-02-16 01:59:51,534 - traffic_analysis - INFO - Precision: 0.6505
+2025-02-16 01:59:51,534 - traffic_analysis - INFO - Recall: 0.6505
+2025-02-16 01:59:51,534 - traffic_analysis - INFO - AUC-ROC: 0.6397
+2025-02-16 01:59:51,536 - traffic_analysis - INFO - F1 Score: 0.6505
+2025-02-16 01:59:51,538 - traffic_analysis - INFO - Saved model to models/congestion_model.pkl
+2025-02-16 02:01:42,441 - traffic_analysis - INFO - Generating 1000 samples of synthetic traffic data
+2025-02-16 02:01:42,472 - traffic_analysis - INFO - Saved generated data to data/traffic_data.csv
+2025-02-16 02:01:42,472 - traffic_analysis - INFO - Starting feature engineering process
+2025-02-16 02:01:42,472 - traffic_analysis - INFO - Converting IP addresses to integers
+2025-02-16 02:01:42,472 - traffic_analysis - INFO - Creating aggregate features
+2025-02-16 02:01:42,472 - traffic_analysis - INFO - Calculating packet rate
+2025-02-16 02:01:43,094 - traffic_analysis - INFO - One-hot encoding categorical features
+2025-02-16 02:01:43,094 - traffic_analysis - INFO - Scaling numerical features
+2025-02-16 02:01:43,094 - traffic_analysis - INFO - Saved scaler to models/scaler.pkl
+2025-02-16 02:01:43,094 - traffic_analysis - INFO - Feature engineering completed
+2025-02-16 02:01:54,160 - traffic_analysis - INFO - Generating 1000 samples of synthetic traffic data
+2025-02-16 02:01:54,180 - traffic_analysis - INFO - Saved generated data to data/traffic_data.csv
+2025-02-16 02:01:54,180 - traffic_analysis - INFO - Starting feature engineering process
+2025-02-16 02:01:54,193 - traffic_analysis - INFO - Converting IP addresses to integers
+2025-02-16 02:01:54,201 - traffic_analysis - INFO - Creating aggregate features
+2025-02-16 02:01:54,207 - traffic_analysis - INFO - Calculating packet rate
+2025-02-16 02:01:54,761 - traffic_analysis - INFO - One-hot encoding categorical features
+2025-02-16 02:01:54,761 - traffic_analysis - INFO - Scaling numerical features
+2025-02-16 02:01:54,761 - traffic_analysis - INFO - Saved scaler to models/scaler.pkl
+2025-02-16 02:01:54,761 - traffic_analysis - INFO - Feature engineering completed
+2025-02-16 02:01:54,774 - traffic_analysis - INFO - Starting model training process
+2025-02-16 02:01:54,776 - traffic_analysis - INFO - Splitting data into train and test sets
+2025-02-16 02:01:54,779 - traffic_analysis - INFO - Saved feature dataframe to models/X.pkl
+2025-02-16 02:01:54,779 - traffic_analysis - INFO - Performing time series cross-validation
+2025-02-16 02:01:54,779 - traffic_analysis - INFO - Training on fold
+2025-02-16 02:02:00,029 - traffic_analysis - INFO - New best model found with F1 score: 0.4331
+2025-02-16 02:02:00,030 - traffic_analysis - INFO - Training on fold
+2025-02-16 02:02:05,096 - traffic_analysis - INFO - New best model found with F1 score: 0.5595
+2025-02-16 02:02:05,112 - traffic_analysis - INFO - Training on fold
+2025-02-16 02:02:12,160 - traffic_analysis - INFO - Training on fold
+2025-02-16 02:02:17,490 - traffic_analysis - INFO - Training on fold
+2025-02-16 02:02:24,170 - traffic_analysis - INFO - Evaluating final model on test set
+2025-02-16 02:02:24,179 - traffic_analysis - INFO - Final model metrics:
+2025-02-16 02:02:24,179 - traffic_analysis - INFO - Precision: 0.6505
+2025-02-16 02:02:24,179 - traffic_analysis - INFO - Recall: 0.6505
+2025-02-16 02:02:24,180 - traffic_analysis - INFO - AUC-ROC: 0.6397
+2025-02-16 02:02:24,181 - traffic_analysis - INFO - F1 Score: 0.6505
+2025-02-16 02:02:24,183 - traffic_analysis - INFO - Saved model to models/congestion_model.pkl

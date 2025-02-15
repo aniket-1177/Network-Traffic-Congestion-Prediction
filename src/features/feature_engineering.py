@@ -104,6 +104,6 @@ if __name__ == "__main__":
     # Test the function with sample data
     from ..data.generate_data import generate_traffic_data
     
-    df = generate_traffic_data(100)
+    df = generate_traffic_data(1000)
     processed_df = engineer_features(df)
     print(processed_df.head())

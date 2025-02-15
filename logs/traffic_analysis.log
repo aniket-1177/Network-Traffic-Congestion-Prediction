@@ -96,3 +96,50 @@
 2025-02-16 02:06:38,386 - traffic_analysis - INFO - Saved protocol distribution plot to visualization\protocol_distribution.png
 2025-02-16 02:06:38,386 - traffic_analysis - INFO - Plotting congestion over time
 2025-02-16 02:06:38,576 - traffic_analysis - INFO - Saved congestion over time plot to visualization\congestion_over_time.png
+2025-02-16 02:09:58,487 - traffic_analysis - INFO - Starting traffic analysis pipeline
+2025-02-16 02:09:58,487 - traffic_analysis - INFO - Loading existing data from data/traffic_data.csv
+2025-02-16 02:09:58,503 - traffic_analysis - INFO - Performing exploratory data analysis
+2025-02-16 02:09:58,503 - traffic_analysis - INFO - Plotting class distribution
+2025-02-16 02:09:58,756 - traffic_analysis - INFO - Saved class distribution plot to visualization\class_distribution.png
+2025-02-16 02:09:58,757 - traffic_analysis - INFO - Plotting traffic volume over time
+2025-02-16 02:09:59,032 - traffic_analysis - INFO - Saved traffic volume plot to visualization\traffic_volume.png
+2025-02-16 02:09:59,032 - traffic_analysis - INFO - Plotting protocol distribution
+2025-02-16 02:09:59,169 - traffic_analysis - INFO - Saved protocol distribution plot to visualization\protocol_distribution.png
+2025-02-16 02:09:59,169 - traffic_analysis - INFO - Plotting congestion over time
+2025-02-16 02:09:59,343 - traffic_analysis - INFO - Saved congestion over time plot to visualization\congestion_over_time.png
+2025-02-16 02:09:59,343 - traffic_analysis - INFO - Performing feature engineering
+2025-02-16 02:09:59,343 - traffic_analysis - INFO - Starting feature engineering process
+2025-02-16 02:09:59,343 - traffic_analysis - INFO - Converting IP addresses to integers
+2025-02-16 02:09:59,343 - traffic_analysis - INFO - Creating aggregate features
+2025-02-16 02:09:59,343 - traffic_analysis - INFO - Calculating packet rate
+2025-02-16 02:09:59,894 - traffic_analysis - INFO - One-hot encoding categorical features
+2025-02-16 02:09:59,910 - traffic_analysis - INFO - Scaling numerical features
+2025-02-16 02:09:59,910 - traffic_analysis - INFO - Saved scaler to models/scaler.pkl
+2025-02-16 02:09:59,910 - traffic_analysis - INFO - Feature engineering completed
+2025-02-16 02:09:59,910 - traffic_analysis - INFO - Training the model
+2025-02-16 02:09:59,918 - traffic_analysis - INFO - Starting model training process
+2025-02-16 02:09:59,920 - traffic_analysis - INFO - Splitting data into train and test sets
+2025-02-16 02:09:59,922 - traffic_analysis - INFO - Saved feature dataframe to models/X.pkl
+2025-02-16 02:09:59,922 - traffic_analysis - INFO - Performing time series cross-validation
+2025-02-16 02:09:59,922 - traffic_analysis - INFO - Training on fold
+2025-02-16 02:10:03,140 - traffic_analysis - INFO - New best model found with F1 score: 0.4503
+2025-02-16 02:10:03,141 - traffic_analysis - INFO - Training on fold
+2025-02-16 02:10:10,389 - traffic_analysis - INFO - New best model found with F1 score: 0.5250
+2025-02-16 02:10:10,389 - traffic_analysis - INFO - Training on fold
+2025-02-16 02:10:17,315 - traffic_analysis - INFO - New best model found with F1 score: 0.5349
+2025-02-16 02:10:17,315 - traffic_analysis - INFO - Training on fold
+2025-02-16 02:10:27,534 - traffic_analysis - INFO - Training on fold
+2025-02-16 02:10:35,731 - traffic_analysis - INFO - New best model found with F1 score: 0.5806
+2025-02-16 02:10:35,731 - traffic_analysis - INFO - Evaluating final model on test set
+2025-02-16 02:10:35,750 - traffic_analysis - INFO - Final model metrics:
+2025-02-16 02:10:35,750 - traffic_analysis - INFO - Precision: 0.9485
+2025-02-16 02:10:35,750 - traffic_analysis - INFO - Recall: 0.8932
+2025-02-16 02:10:35,751 - traffic_analysis - INFO - AUC-ROC: 0.9208
+2025-02-16 02:10:35,753 - traffic_analysis - INFO - F1 Score: 0.9200
+2025-02-16 02:10:35,754 - traffic_analysis - INFO - Saved model to models/congestion_model.pkl
+2025-02-16 02:10:35,754 - traffic_analysis - INFO - Creating model evaluation visualizations
+2025-02-16 02:10:35,758 - traffic_analysis - INFO - Plotting confusion matrix
+2025-02-16 02:10:35,939 - traffic_analysis - INFO - Saved confusion matrix plot to visualization\confusion_matrix.png
+2025-02-16 02:10:35,940 - traffic_analysis - INFO - Plotting feature importance
+2025-02-16 02:10:36,123 - traffic_analysis - INFO - Saved feature importance plot to visualization\feature_importance.png
+2025-02-16 02:10:36,123 - traffic_analysis - INFO - Pipeline completed successfully

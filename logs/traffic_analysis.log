@@ -1,0 +1,2 @@
+2025-02-16 01:16:49,992 - traffic_analysis - INFO - Generating 1000 samples of synthetic traffic data
+2025-02-16 01:16:50,007 - traffic_analysis - INFO - Saved generated data to data/traffic_data.csv

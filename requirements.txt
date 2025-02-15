@@ -1,0 +1,18 @@
+﻿# Core dependencies
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+ipaddress
+
+# Web framework
+flask
+# Utilities
+pyyaml
+python-dotenv
+
+# Development tools
+pytest
+black
+flake8

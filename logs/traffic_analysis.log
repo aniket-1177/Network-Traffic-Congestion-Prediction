@@ -1,2 +1,12 @@
 2025-02-16 01:16:49,992 - traffic_analysis - INFO - Generating 1000 samples of synthetic traffic data
 2025-02-16 01:16:50,007 - traffic_analysis - INFO - Saved generated data to data/traffic_data.csv
+2025-02-16 01:28:59,284 - traffic_analysis - INFO - Generating 100 samples of synthetic traffic data
+2025-02-16 01:28:59,300 - traffic_analysis - INFO - Saved generated data to data/traffic_data.csv
+2025-02-16 01:28:59,300 - traffic_analysis - INFO - Starting feature engineering process
+2025-02-16 01:28:59,300 - traffic_analysis - INFO - Converting IP addresses to integers
+2025-02-16 01:28:59,300 - traffic_analysis - INFO - Creating aggregate features
+2025-02-16 01:28:59,315 - traffic_analysis - INFO - Calculating packet rate
+2025-02-16 01:28:59,381 - traffic_analysis - INFO - One-hot encoding categorical features
+2025-02-16 01:28:59,384 - traffic_analysis - INFO - Scaling numerical features
+2025-02-16 01:28:59,388 - traffic_analysis - INFO - Saved scaler to models/scaler.pkl
+2025-02-16 01:28:59,388 - traffic_analysis - INFO - Feature engineering completed

@@ -76,3 +76,23 @@
 2025-02-16 02:02:24,180 - traffic_analysis - INFO - AUC-ROC: 0.6397
 2025-02-16 02:02:24,181 - traffic_analysis - INFO - F1 Score: 0.6505
 2025-02-16 02:02:24,183 - traffic_analysis - INFO - Saved model to models/congestion_model.pkl
+2025-02-16 02:04:24,880 - traffic_analysis - INFO - Starting prediction process
+2025-02-16 02:04:25,105 - traffic_analysis - INFO - Starting feature engineering process
+2025-02-16 02:04:25,105 - traffic_analysis - INFO - Converting IP addresses to integers
+2025-02-16 02:04:25,105 - traffic_analysis - INFO - Creating aggregate features
+2025-02-16 02:04:25,118 - traffic_analysis - INFO - Skipping packet rate calculation for single record
+2025-02-16 02:04:25,120 - traffic_analysis - INFO - One-hot encoding categorical features
+2025-02-16 02:04:25,122 - traffic_analysis - INFO - Scaling numerical features
+2025-02-16 02:04:25,125 - traffic_analysis - INFO - Loaded scaler from config\..\models/scaler.pkl
+2025-02-16 02:04:25,125 - traffic_analysis - INFO - Feature engineering completed
+2025-02-16 02:04:25,129 - traffic_analysis - INFO - Prediction completed: 0
+2025-02-16 02:06:36,507 - traffic_analysis - INFO - Generating 1000 samples of synthetic traffic data
+2025-02-16 02:06:36,528 - traffic_analysis - INFO - Saved generated data to data/traffic_data.csv
+2025-02-16 02:06:36,528 - traffic_analysis - INFO - Plotting class distribution
+2025-02-16 02:06:38,037 - traffic_analysis - INFO - Saved class distribution plot to visualization\class_distribution.png
+2025-02-16 02:06:38,039 - traffic_analysis - INFO - Plotting traffic volume over time
+2025-02-16 02:06:38,260 - traffic_analysis - INFO - Saved traffic volume plot to visualization\traffic_volume.png
+2025-02-16 02:06:38,260 - traffic_analysis - INFO - Plotting protocol distribution
+2025-02-16 02:06:38,386 - traffic_analysis - INFO - Saved protocol distribution plot to visualization\protocol_distribution.png
+2025-02-16 02:06:38,386 - traffic_analysis - INFO - Plotting congestion over time
+2025-02-16 02:06:38,576 - traffic_analysis - INFO - Saved congestion over time plot to visualization\congestion_over_time.png

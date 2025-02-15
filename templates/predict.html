@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Traffic Congestion</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container"> <h1>Traffic Congestion Prediction</h1>
+        <form method="POST" action="/predictdata">
+            <label for="packet_size">Packet Size:</label>
+            <input type="number" id="packet_size" name="packet_size" required><br><br>
+
+            <label for="bytes_sent">Bytes Sent:</label>
+            <input type="number" id="bytes_sent" name="bytes_sent" required><br><br>
+
+            <label for="source_ip">Source IP:</label>
+            <input type="text" id="source_ip" name="source_ip" required><br><br>
+
+            <label for="dest_ip">Destination IP:</label>
+            <input type="text" id="dest_ip" name="dest_ip" required><br><br>
+
+            <label for="protocol">Protocol:</label>
+            <select id="protocol" name="protocol" required>
+                <option value="TCP">TCP</option>
+                <option value="UDP">UDP</option>
+                <option value="HTTP">HTTP</option>
+            </select><br><br>
+
+            <label for="timestamp_seconds">Timestamp (Seconds):</label>
+            <input type="number" id="timestamp_seconds" name="timestamp_seconds" required><br><br>
+
+            <label for="hour">Hour:</label>
+            <input type="number" id="hour" name="hour" min="0" max="23" required><br><br>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if result %}
+            <div class="result">
+                <h2>Congestion Status: {{ result }}</h2>
+            </div>
+        {% elif error %}
+            <div class="error">
+                <h2>Error: {{ error }}</h2>
+            </div>
+        {% endif %}
+    </div> </body>
+</html>

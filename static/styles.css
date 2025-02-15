@@ -1,0 +1,94 @@
+/* General styles */
+body {
+    font-family: sans-serif;
+    margin: 0; /* Remove default margins */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Align items vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+.container { /* Create a container for centering content */
+    width: 80%; /* Adjust as needed */
+    max-width: 960px; /* Set a maximum width */
+    margin: 20px auto; /* Center horizontally */
+    flex: 1; /* Allow content to expand */
+}
+
+h1, h2 {
+    color: #2c3e50; /* Darker blue heading color */
+    text-align: center; /* Center headings */
+}
+
+a {
+    color: #3498db; /* Blue link color */
+    text-decoration: none;
+    text-align: center; /* Center link text */
+    display: block; /* Make link a block element for better centering */
+    margin: 20px auto; /* Center horizontally */
+    width: fit-content; /* Adjust width to content */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Index page styles */
+#index-container {
+    text-align: center;
+}
+
+
+/* Predict page styles */
+form {
+    background-color: #fff; /* White form background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 500px; /* Limit form width */
+    margin: 20px auto; /* Center the form */
+}
+
+label {
+    display: block; /* Place labels above inputs */
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: calc(100% - 12px); /* Full width input, accounting for padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+button {
+    background-color: #3498db; /* Blue button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Make button full width of form */
+    margin-top: 10px; /* Add some space above the button */
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.result, .error {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center; /* Center result/error text */
+}
+
+.error {
+    color: red;
+}   

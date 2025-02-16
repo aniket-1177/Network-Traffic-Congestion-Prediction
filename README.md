@@ -95,7 +95,7 @@ A simple Flask web application (`app.py`) is included to demonstrate how the tra
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/aniket-1177/Network-Traffic-Congestion-Prediction.git
     ```
 2.  **Create a virtual environment:**
     ```bash
@@ -104,6 +104,8 @@ A simple Flask web application (`app.py`) is included to demonstrate how the tra
 3.  **Activate the virtual environment:**
     ```bash
     source .venv/bin/activate  # Linux/macOS
+    ```
+    ```bash
     .venv\Scripts\activate     # Windows
     ```
 4.  **Install dependencies:**

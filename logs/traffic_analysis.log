@@ -265,3 +265,13 @@
 2025-02-16 02:57:31,141 - traffic_analysis - INFO - Loaded scaler from config\..\models/scaler.pkl
 2025-02-16 02:57:31,141 - traffic_analysis - INFO - Feature engineering completed
 2025-02-16 02:57:31,149 - traffic_analysis - INFO - Prediction completed: 1
+2025-02-16 12:33:06,721 - traffic_analysis - INFO - Starting prediction process
+2025-02-16 12:33:08,830 - traffic_analysis - INFO - Starting feature engineering process
+2025-02-16 12:33:08,839 - traffic_analysis - INFO - Converting IP addresses to integers
+2025-02-16 12:33:08,843 - traffic_analysis - INFO - Creating aggregate features
+2025-02-16 12:33:08,846 - traffic_analysis - INFO - Skipping packet rate calculation for single record
+2025-02-16 12:33:08,855 - traffic_analysis - INFO - One-hot encoding categorical features
+2025-02-16 12:33:08,855 - traffic_analysis - INFO - Scaling numerical features
+2025-02-16 12:33:08,855 - traffic_analysis - INFO - Loaded scaler from config\..\models/scaler.pkl
+2025-02-16 12:33:08,855 - traffic_analysis - INFO - Feature engineering completed
+2025-02-16 12:33:08,877 - traffic_analysis - INFO - Prediction completed: 1
